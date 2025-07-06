@@ -3,7 +3,7 @@ import HeroSlider from '@/components/HeroSlider';
 
 export default function HomePage() {
   return (
-    <div className="bg-white text-black min-h-screen">
+    <div>
       <HeroSlider />
       {/* Остальной контент главной страницы */}
       <div className="container mx-auto my-12">

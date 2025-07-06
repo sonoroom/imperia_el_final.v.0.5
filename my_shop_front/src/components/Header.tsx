@@ -5,9 +5,10 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import MegaMenu from './MegaMenu';
 import { NestedCategory } from '@/lib/api';
-import MobileMenu from './MobileMenu'; // Убедись, что этот компонент существует
+import MobileMenu from './MobileMenu';
+import Link from 'next/link';
 
-// 1. Единый, правильный интерфейс для пропсов
+// Интерфейс для пропсов
 interface TopBarLink { name: string; href: string; }
 interface HeaderProps {
   allCategories: NestedCategory[];

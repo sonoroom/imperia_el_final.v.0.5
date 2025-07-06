@@ -21,9 +21,8 @@ export default function Layout({ children, categoryTree }: LayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <TopBar links={topBarLinks} />
-      {/* Мы передаем в Header пропс `allCategories` */}
-        <Header allCategories={categoryTree} topBarLinks={topBarLinks} />
-      <main className="flex-grow">{children}</main>
+      <Header allCategories={categoryTree} topBarLinks={topBarLinks} />
+      <main className="flex-grow bg-white text-black">{children}</main>
     </div>
   );
 }
